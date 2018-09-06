@@ -9,16 +9,37 @@ Instructor
 
 ---
 
-This repository will contain the teaching material and other info associated with the workshop "Advanced Machine Learning with scikit-learn Part II/II
-".
+This repository will contain the teaching material and other info associated with the workshop "Advanced Machine Learning with scikit-learn Part II/II".
 
 Please download the Large Movie Review dataset from http://ai.stanford.edu/~amaas/data/sentiment/ before coming to the workshop!
 
+About the workshop
+------------------
+Scikit-learn is a machine learning library in Python, that has become a valuable tool for many data science practitioners. This training will cover some advanced topics in using scikit-learn, such as how to perform out-of-core learning with scikit-learn and how to speed up
+parameter search.
+We'll also cover how to build your own models or feature extraction methods that are compatible with scikit-learn, which is
+important for feature extraction in many domains. We will see how we can customize scikit-learn even further, using
+custom methods for cross-validation or model evaluation.
+
+Prerequisites
+-------------
+This workshop assumes familiarity with Jupyter notebooks and basics of pandas, matplotlib and numpy.
+It also assumes experience using scikit-learn and familiarity with the API.
+
+Content
+-------
+
+- Out-of-core learning with scikit-learn
+- Feature Hashing
+- Building custom estimators and extending scikit-learn
+- Advanced features in scikit-learn
+- Efficient parameter tuning
+- TBA
 
 Obtaining the Tutorial Material
 --------------------------------
 
-If you are familiar with git, it is probably most convenient if you clone the GitHub repository. This
+If you are familiar with git, it is most convenient if you clone the GitHub repository. This
 is highly encouraged as it allows you to easily synchronize any changes to the material.
 
 ```
