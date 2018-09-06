@@ -1,4 +1,4 @@
-Advanced Scikit-learn (with Andreas Mueller)
+Advanced Machine Learning with scikit-learn Part II/II
 ========================================================
 
 
@@ -21,10 +21,10 @@ If you are familiar with git, it is probably most convenient if you clone the Gi
 is highly encouraged as it allows you to easily synchronize any changes to the material.
 
 ```
-git clone https://github.com/amueller/ml-training-advanced
+git clone https://github.com/amueller/ml-workshop-4-of-4
 ```
 
-If you are not familiar with git, you can download the repository as a .zip file by heading over to the GitHub repository (https://github.com/amueller/ml-training-advanced) in your browser and click the green “Download” button in the upper right.
+If you are not familiar with git, you can download the repository as a .zip file by heading over to the GitHub repository (https://github.com/amueller/ml-workshop-4-of-4) in your browser and click the green “Download” button in the upper right.
 
 ![](images/download-repo.png)
 
