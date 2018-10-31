@@ -27,10 +27,8 @@ Content
 -------
 
 - Out-of-core learning with scikit-learn
-- Feature Hashing
 - Building custom estimators and extending scikit-learn
 - Advanced features in scikit-learn
-- Efficient parameter tuning
 - TBA
 
 Obtaining the Tutorial Material
