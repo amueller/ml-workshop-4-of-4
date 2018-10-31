@@ -28,6 +28,7 @@ Content
 
 - Out-of-core learning with scikit-learn
 - Building custom estimators and extending scikit-learn
+- Working with Text Data
 - Advanced features in scikit-learn
 - TBA
 
