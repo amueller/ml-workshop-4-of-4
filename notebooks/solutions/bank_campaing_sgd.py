@@ -15,10 +15,14 @@ from sklearn.linear_model import SGDClassifier, LogisticRegression
 from sklearn.pipeline import make_pipeline
 lr = make_pipeline(StandardScaler(), LogisticRegression())
 
-cross_val_score(lr, X_train, y_train, cv=5)
+print(cross_val_score(lr, X_train, y_train, cv=5))
 
 sgd = make_pipeline(StandardScaler(), SGDClassifier(loss='log', alpha=.01, max_iter=10, tol=1e-2))
 
-cross_val_score(sgd, X_train, y_train, cv=5)
-
-cross_val_score(SGDClassifier(alpha=.01, max_iter=10000, tol=1e-3), X_train, y_train, cv=5)
+from time import time
+tick = time()
+print(cross_val_score(sgd, X_train, y_train, cv=5))
+print("SGD took ", time() - tick)
+tick = time()
+print(cross_val_score(lr, X_train, y_train, cv=5))
+print("LogisticRegression took ", time() - tick)
