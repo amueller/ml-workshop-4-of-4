@@ -161,10 +161,9 @@ from sklearn.datasets import load_files
 reviews_train = load_files("../data/aclImdb/train/")
 
 text_trainval, y_trainval = reviews_train.data, reviews_train.target
-print("type of text_train: {}".format(type(text_trainval)))
-print("length of text_train: {}".format(len(text_trainval)))
-print("class balance: {}".format(np.bincount(y_trainval)))
-
+print("type of text_train:", type(text_trainval))
+print("length of text_train:", len(text_trainval))
+print("class balance:", np.bincount(y_trainval))
 ```
 
 ```
@@ -177,7 +176,8 @@ class balance: [12500 12500]
 
 # Data loading
 ```python
-print("text_train[1]:\n{}".format(text_trainval[1].decode()))
+print("text_train[1]:")
+print(text_trainval[1].decode())
 ```
 .smaller[
 ```
@@ -435,8 +435,8 @@ lr.score(X_val_df4, y_val)
 .tiny-code[
 ```python
 cv = CountVectorizer(ngram_range=(1, 1)).fit(malory)
-print("Vocabulary size: {}".format(len(cv.vocabulary_)))
-print("Vocabulary:\n{}".format(cv.get_feature_names()))
+print("Vocabulary size:", len(cv.vocabulary_))
+print("Vocabulary:", cv.get_feature_names())
 ```
 ```
 Vocabulary size: 8
@@ -445,8 +445,9 @@ Vocabulary:
 ```
 ```python
 cv = CountVectorizer(ngram_range=(2, 2)).fit(malory)
-print("Vocabulary size: {}".format(len(cv.vocabulary_)))
-print("Vocabulary:\n{}".format(cv.get_feature_names()))
+print("Vocabulary size:", len(cv.vocabulary_))
+print("Vocabulary:")
+print(cv.get_feature_names())
 ```
 ```
 Vocabulary size: 8
@@ -456,8 +457,9 @@ Vocabulary:
 
 ```python
 cv = CountVectorizer(ngram_range=(1, 2)).fit(malory)
-print("Vocabulary size: {}".format(len(cv.vocabulary_)))
-print("Vocabulary:\n{}".format(cv.get_feature_names()))
+print("Vocabulary size:", len(cv.vocabulary_))
+print("Vocabulary:")
+print(cv.get_feature_names())
 ```
 ```
 Vocabulary size: 16
@@ -484,7 +486,7 @@ Vocabulary Sizes
 ```
 ```python
 cv = CountVectorizer(ngram_range=(1, 4)).fit(text_train)
-print("Vocabulary size 1-4gram: {}".format(len(cv.vocabulary_)))
+print("Vocabulary size 1-4gram:", len(cv.vocabulary_))
 ```
 ```
 Vocabulary size 1-4gram (min_df=1): 7815528
@@ -499,11 +501,11 @@ Vocabulary size 1-4gram (min_df=1): 7815528
 ```python
 cv = CountVectorizer(ngram_range=(1, 2), min_df=4)
 cv.fit(text_train)
-print("(1, 2), min_df=4: {}".format(len(cv.vocabulary_)))
+print("(1, 2), min_df=4:", len(cv.vocabulary_))
 cv = CountVectorizer(ngram_range=(1, 2), min_df=4,
                      stop_words="english")
 cv.fit(text_train)
-print("(1, 2), stopwords, min_df=4: {}".format(len(cv.vocabulary_)))
+print("(1, 2), stopwords, min_df=4:", len(cv.vocabulary_))
 ```
 ```
 (1, 2), min_df=4: 155354
@@ -695,8 +697,9 @@ class: spacious
 .tiny-code[
 ```python
 cv = CountVectorizer(ngram_range=(2, 3), analyzer="char").fit(malory)
-print("Vocabulary size: {}".format(len(cv.vocabulary_)))
-print("Vocabulary:\n{}".format(cv.get_feature_names()))
+print("Vocabulary size:", len(cv.vocabulary_))
+print("Vocabulary:")
+print(cv.get_feature_names())
 ```
 ```
 Vocabulary size: 73
@@ -713,8 +716,9 @@ Vocabulary:
 .tiny-code[
 ```python
 cv = CountVectorizer(ngram_range=(2, 3), analyzer="char_wb").fit(malory)
-print("Vocabulary size: {}".format(len(cv.vocabulary_)))
-print("Vocabulary:\n{}".format(cv.get_feature_names()))
+print("Vocabulary size:", len(cv.vocabulary_))
+print("Vocabulary:")
+print(cv.get_feature_names())
 ```
 ```
 Vocabulary size: 74
