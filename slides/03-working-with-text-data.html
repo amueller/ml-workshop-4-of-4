@@ -158,7 +158,8 @@ class: center, middle
 
 ```python
 from sklearn.datasets import load_files
-reviews_train = load_files("../data/aclImdb/train/")
+reviews_train = load_files("../data/aclImdb/train/"
+                           categories=['neg', 'pos'])
 
 text_trainval, y_trainval = reviews_train.data, reviews_train.target
 print("type of text_train:", type(text_trainval))
