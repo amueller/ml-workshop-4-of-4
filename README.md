@@ -1,6 +1,12 @@
 Advanced Machine Learning with scikit-learn Part II/II
 ========================================================
 
+Part 4 of 4
+-----------
+Other parts:
+- [Part 1](https://github.com/amueller/ml-workshop-1-of-4)
+- [Part 2](https://github.com/amueller/ml-workshop-2-of-4)
+- [Part 3](https://github.com/amueller/ml-workshop-3-of-4)
 
 Instructor
 -----------
