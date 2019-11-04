@@ -150,7 +150,7 @@ scores['test_roc_auc'].mean(), scores['test_average_precision'].mean()
 0.920, 0.630 
 ```python
 from sklearn.ensemble import RandomForestClassifier
-scores = cross_validate(RandomForestClassifier(n_estimators=100),
+scores = cross_validate(RandomForestClassifier(),
                         X_train, y_train, cv=10,
                         scoring=('roc_auc', 'average_precision'))
 scores['test_roc_auc'].mean(), scores['test_average_precision'].mean()
@@ -434,7 +434,7 @@ scores['test_roc_auc'].mean(), scores['test_average_precision'].mean()
 ```
 0.918, 0.587
 ```python
-scores = cross_validate(RandomForestClassifier(n_estimators=100, class_weight='balanced'),
+scores = cross_validate(RandomForestClassifier(class_weight='balanced'),
                         X_train, y_train, cv=10,
                         scoring=('roc_auc', 'average_precision'))
 scores['test_roc_auc'].mean(), scores['test_average_precision'].mean()
@@ -468,7 +468,7 @@ from imblearn.ensemble import BalancedBaggingClassifier
 
 tree = DecisionTreeClassifier(max_features='auto')
 resampled_rf = BalancedBaggingClassifier(base_estimator=tree,
-                                         n_estimators=100, random_state=0)
+                                         random_state=0)
 scores = cross_validate(resampled_rf,
                         X_train, y_train, cv=10,
                         scoring=('roc_auc', 'average_precision'))

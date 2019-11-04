@@ -12,7 +12,7 @@ LogisticRegression().fit(X_train_, y_train).score(X_test_, y_test)
 
 print(X_train.shape)
 
-select = SelectFromModel(RandomForestClassifier(n_estimators=100), threshold="5 * median")
+select = SelectFromModel(RandomForestClassifier(), threshold="5 * median")
 X_train_selected = select.fit_transform(X_train_, y_train)
 X_test_selected = select.transform(X_test_)
 
