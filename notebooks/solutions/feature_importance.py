@@ -1,3 +1,11 @@
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler, PolynomialFeatures
+from sklearn.linear_model import LogisticRegression
+from sklearn.feature_selection import SelectFromModel
+from sklearn.ensemble import RandomForestClassifier
+
 data = pd.read_csv("data/adult.csv", index_col=0)
 y = data.income.values
 X = pd.get_dummies(data.drop("income", axis=1))
@@ -16,7 +24,8 @@ select = SelectFromModel(RandomForestClassifier(), threshold="5 * median")
 X_train_selected = select.fit_transform(X_train_, y_train)
 X_test_selected = select.transform(X_test_)
 
-score = LogisticRegression().fit(X_train_selected, y_train).score(X_test_selected, y_test)
+score = LogisticRegression().fit(X_train_selected,
+                                 y_train).score(X_test_selected, y_test)
 print(score)
 
 print(X_train_selected.shape)
