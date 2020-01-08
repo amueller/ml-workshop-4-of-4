@@ -1,5 +1,5 @@
-Advanced Machine Learning with scikit-learn Part II/II
-========================================================
+Advanced Machine Learning with scikit-learn: Imbalanced classification and text data
+====================================================================================
 
 Part 4 of 4
 -----------
@@ -21,8 +21,12 @@ Please download the Large Movie Review dataset from http://ai.stanford.edu/~amaa
 
 About the workshop
 ------------------
-Scikit-learn is a machine learning library in Python, that has become a valuable tool for many data science practitioners. This training will cover some advanced topics in using scikit-learn, such as how to perform out-of-core learning with scikit-learn and how to speed up parameter search.
-We'll also cover how to build your own models or feature extraction methods that are compatible with scikit-learn, which is important for feature extraction in many domains. We will see how we can customize scikit-learn even further, using custom methods for cross-validation or model evaluation.
+Scikit-learn is a machine learning library in Python, that has become a
+valuable tool for many data science practitioners. This training will cover
+some advanced topics in using scikit-learn and how to build your own models or
+feature extraction methods that are compatible with scikit-learn.
+We will also discuss different approaches to feature selection, and resampling methods for imbalanced data.
+Finally, we'll discuss how to do classification of text data using the bag-of-words model and its variants.
 
 Prerequisites
 -------------
@@ -31,12 +35,10 @@ It also assumes experience using scikit-learn and familiarity with the API.
 
 Content
 -------
-
-- Out-of-core learning with scikit-learn
+- Feature selection
+- Working with imbalanced data
 - Building custom estimators and extending scikit-learn
 - Working with Text Data
-- Advanced features in scikit-learn
-- TBA
 
 Obtaining the Tutorial Material
 --------------------------------
