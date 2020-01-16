@@ -13,7 +13,7 @@ Content
 - [Working with imbalanced data](https://amueller.github.io/ml-workshop-4-of-4/slides/01-imbalanced-data.html)
 - [Feature selection](https://amueller.github.io/ml-workshop-4-of-4/slides/02-feature-selection.html)
 - [Working with Text Data](https://amueller.github.io/ml-workshop-4-of-4/slides/03-working-with-text-data.html)
-- [Building custom estimators and extending scikit-learn](https://amueller.github.io/ml-workshop-4-of-4/notebooks/04 Custom Estimators.ipynb)
+- [Building custom estimators and extending scikit-learn](https://github.com/amueller/ml-workshop-4-of-4/blob/master/notebooks/04%20Custom%20Estimators.ipynb)
 
 Instructor
 -----------
