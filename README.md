@@ -8,6 +8,13 @@ Other parts:
 - [Part 2](https://github.com/amueller/ml-workshop-2-of-4)
 - [Part 3](https://github.com/amueller/ml-workshop-3-of-4)
 
+Content
+-------
+- [Working with imbalanced data](https://amueller.github.io/ml-workshop-4-of-4/slides/01-imbalanced-data.html)
+- [Feature selection](https://amueller.github.io/ml-workshop-4-of-4/slides/02-feature-selection.html)
+- [Working with Text Data](https://amueller.github.io/ml-workshop-4-of-4/slides/03-working-with-text-data.html)
+- [Building custom estimators and extending scikit-learn](https://amueller.github.io/ml-workshop-4-of-4/notebooks/04\ Custom\ Estimators.ipynb)
+
 Instructor
 -----------
 
@@ -32,13 +39,6 @@ Prerequisites
 -------------
 This workshop assumes familiarity with Jupyter notebooks and basics of pandas, matplotlib and numpy.
 It also assumes experience using scikit-learn and familiarity with the API.
-
-Content
--------
-- Feature selection
-- Working with imbalanced data
-- Building custom estimators and extending scikit-learn
-- Working with Text Data
 
 Obtaining the Tutorial Material
 --------------------------------
